@@ -11,6 +11,7 @@ void main(){
     
     float radius=.5;
     float d=length(uv)-radius;
+    d=step(d,radius);
     
     gl_FragColor=vec4(vec3(d),1.);
 }
